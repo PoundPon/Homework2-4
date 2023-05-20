@@ -3,7 +3,7 @@ public class Program{
     static void Main(string[]args){
         int N = int.Parse(Console.ReadLine());
         int K = int.Parse(Console.ReadLine());
-        if (N > 0 || N <= 10000 || K < 0 || K <= 100){
+        if ((N > 0 && N <= 10000 ) && ( K < 0 && K <= 100)){
             int [] people = new int[N];
             for(int i = 0;i < N;i++){
                 people[i] = int.Parse(Console.ReadLine());
